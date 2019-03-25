@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "angel build",
+    "apply": "angel apply deployment",
+    "release": "angel release",
+    "delete": "angel delete deployment",
+    "logs": "angel logs"
+  },
+  "devDependencies": {
+    "angelabilities-exec": "^1.0.0",
+    "angelabilities-package-scripts": "^0.1.0",
+    "angelscripts-help": "^0.2.0",
+    "angelscripts-k8s-deployments": "github:node-organic/angelscripts-k8s-deployments",
+    "organic-angel": "^0.3.2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "organic-stem-cell-k8s-deployments-template",
+  "description": "",
+  "version": "0.0.0",
+  "bin": {
+    "organic-stem-cell-k8s-deployments-template": "./index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "organic-stack-upgrade": "^2.0.0",
+    "p-iteration": "^1.1.8"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.5.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/seed/"
+    ]
+  },
+  "stackUpgrades": {
+    "organic-stack-template": "2.0.0"
+  }
+}

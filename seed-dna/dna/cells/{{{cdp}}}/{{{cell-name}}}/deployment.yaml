@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "{{{cell-name}}}-deployment"
+  labels:
+    app: "{{{cell-name}}}"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "{{{cell-name}}}"
+  template:
+    metadata:
+      labels:
+        app: "{{{cell-name}}}"
+    spec:
+      containers:
+      - name: "{{{cell-name}}}"
+        image: "{$REPOSITORY}/{{{cell-name}}}:{$CELLVERSION}"
+        resources:
+          requests:
+            cpu: "5m"
