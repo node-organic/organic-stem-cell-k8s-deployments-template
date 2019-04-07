@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: "{{{cell-name}}}"
-        image: "@{cells.{{{cdp}}}.{{{cell-name}}}.registry}/{{{cell-name}}}:{$CELLVERSION}"
+        image: "{{{cell-container-registry}}}/{{{cell-name}}}:{$CELLVERSION}"
         resources:
           requests:
             cpu: "5m"
